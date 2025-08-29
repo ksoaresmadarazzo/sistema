@@ -1,18 +1,18 @@
 import  {Link} from 'react-router-dom'
-import logo from '../assets/imagem.png'
+// import logo from '../assets/imagem.png'
 
 const Nav = () => {
   return (
     <header>
       <nav>
-        <img src={} alt="logo" />
+        {/* <img src={} alt="logo" /> */}
         <ul>
           <li>
             <Link to='/'>Home</Link>
             
           </li>
           <li>
-            <Link to='/'>Cliente</Link>
+            <Link to='/Cliente'>Cliente</Link>
           </li>
         </ul>
       </nav>
