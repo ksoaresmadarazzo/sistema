@@ -1,18 +1,18 @@
 import  {Link} from 'react-router-dom'
-// import logo from '../assets/imagem.png'
+import logo from '../assets/imagem.png'
 
 const Nav = () => {
   return (
-    <header>
-      <nav>
-        {/* <img src={} alt="logo" /> */}
-        <ul>
-          <li>
-            <Link to='/'>Home</Link>
+    <header className='bg-gray-800 text-white p-4 shadow-md'>
+      <nav className='container mx-auto flex justify-between items-center'>
+        <img src={logo} alt="logo" className='h-10 w-auto'/>
+        <ul className='flex space-x-4'>
+          <li className='list-none'>
+            <Link to='/' className='hover:text-yellow-400 transition-colors duration-300'>Home</Link>
             
           </li>
           <li>
-            <Link to='/Cliente'>Cliente</Link>
+            <Link to='/Cliente'  className='hover:text-yellow-400 transition-colors duration-300'>Cliente</Link>
           </li>
         </ul>
       </nav>
